@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hy! Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="chat.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section-one">
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="chat.png"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#section-two">About</a></li>
+                <li><a href="#section-three">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>Welcome to the official <b>Hy!</b> Landing Page</h2>
+                <p>Introducing <b>Hy!</b>, the revolutionary video conference app that will change the way you connect and collaborate. With its cutting-edge features and intuitive interface, <b>Hy!</b> offers a next-level virtual meeting experience that brings people together like never before.</p>
+                <p>With <b>Hy!</b>, you're not just using an ordinary video conference app; you're embracing the future of virtual collaboration. Say hello to seamless connectivity, effortless user experience, advanced collaboration tools, enhanced security, and unmatched support—all in one powerful package.</p>
+                <a href="#section-two">Learn More</a>
+            </div>
+            <div class="imagebox">
+                <img src="video-call.png" class="image">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="video-call.png" onclick="imgSlider('video-call.png');changeCircleColor('#50C878')"></li>
+            <li><img src="online-interview.png" onclick="imgSlider('online-interview.png');changeCircleColor('#017143')"></li>
+            <li><img src="videoconference.png" onclick="imgSlider('videoconference.png');changeCircleColor('#90EE90')"></li>
+        </ul>
+
+        <ul id="icons">
+            <li><a href="https://twitter.com/Amarajah7"><img src="twitter-logo.png"></a></li>
+            <li><a href="https://github.com/Amarajah/"><img src="github.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/ibe-naomi"><img src="linkedin.png"></a></li>
+        </ul>
+    </section>
+
+    <section id="section-two">
+        <div id="wrapper">
+            <div id="left">
+                <img src="message.png" alt="video-call">
+            </div>
+            <div id="right">
+                <h1>About <b>Hy!</b></h1>
+                <p>In an increasingly interconnected world, effective communication is the driving force behind success. Whether you're a remote worker, a business professional, or a student collaborating on a group project, the ability to connect with others in a meaningful way is essential. Enter <b>Hy!</b>, the groundbreaking video conference app that is poised to revolutionize the way we connect and collaborate.</p>
+                <p>Simplicity is at the core of the <b>Hy!</b> design philosophy. We believe that technology should be accessible to all, regardless of technical expertise. Hosting or joining a meeting with <b>Hy!</b> is effortless. Our intuitive user interface guides you through the process seamlessly, allowing you to focus on the conversation at hand. Whether you're a seasoned video conferencing pro or a first-time user, <b>Hy!</b> ensures that everyone can participate with ease.</p>
+                <p><b>Hy!</b> is not just a video conference app; it's a game-changer. Embrace the future of virtual communication, where seamless connectivity, intuitive user experience, advanced collaboration tools, and unwavering security come together in one powerful package. Join us on this transformative journey and revolutionize the way you connect and collaborate. Welcome to <b>Hy!</b></p>
+            </div>
+    </section>
+
+    <section id="section-three">
+        <div id="contact-section">
+            <h1>Would you like to contact us?</h1>
+            <div class="form-container">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Jane Doe" required>
+                <input type="email" name="email" placeholder="jane@mail.com" required>
+                <textarea name="message" placeholder="Please leave a message" required></textarea>
+                <button type="submit" name="submit">Send </button>
+                </form>
+                </div>
+        </div>
+    </section>
+
+    <section id="section-four">
+        <p>Click <a href="#">here</a> to use the <b>Hy!</b> app now</p>
+    </section>
+
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.image').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
